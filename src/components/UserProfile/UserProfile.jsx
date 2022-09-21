@@ -22,7 +22,7 @@ export default function UserProfile() {
   }, []);
 
   function logOut() {
-    axios.get("https://worker-production-2aad.up.railway.app/auth/logout", { withCredentials: true })
+    axios.get("https://mascotapps-back-main.up.railway.app/auth/logout", { withCredentials: true })
   }
 
 
