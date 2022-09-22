@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Login() {
   const googleLogin = () => {
-    window.open("https://mascotapps-back-main.up.railway.app/", "_self");
+    window.open("https://dev-roby-desarollo.up.railway.app/", "_self");
   };
 
   return (
