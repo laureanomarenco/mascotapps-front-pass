@@ -14,5 +14,5 @@ export const POST =
   "https://mascotapps-back-production.up.railway.app/users/postnewpet";
 
 export const LOGIN = URL + "auth/google";
-export const LOGIN_LOGGED = URL + "login";
+export const LOGIN_LOGGED = URL + "auth/login";
 export const USER_LOGGED = URL + "profile";
