@@ -65,9 +65,7 @@ export default function Login() {
               </div>
             </div>
             <div>
-              <button type="button" onClick={googleLogin}>
-                Sign in con Google
-              </button>
+              <button onClick={googleLogin}>Sign in con Google</button>
             </div>
             <div className="flex items-center justify-between">
               <div className="flex items-center">
