@@ -4,7 +4,7 @@ import React from "react";
 export default function Login() {
   const googleLogin = () => {
     window.open(
-      "https://mascotapps-back-main.up.railway.app/auth/google",
+      "https://dev-roby-desarollo.up.railway.app/auth/google",
       "_self"
     );
   };
