@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import React from "react";
 
-
 export default function Login() {
   const googleLogin = () => {
-    window.open("https://mascotapps-back-main.up.railway.app/", "_self")
-  }
+    window.open(
+      "https://mascotapps-back-main.up.railway.app/auth/google",
+      "_self"
+    );
+  };
 
   return (
     <>
@@ -63,9 +65,7 @@ export default function Login() {
               </div>
             </div>
             <div>
-              <button onClick={googleLogin}>
-                Sign in con Google
-              </button>
+              <button onClick={googleLogin}>Sign in con Google</button>
             </div>
             <div className="flex items-center justify-between">
               <div className="flex items-center">
