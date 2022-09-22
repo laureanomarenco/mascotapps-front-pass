@@ -11,14 +11,13 @@ export default function Navbar() {
   const [mdOptionsToggle, setMdOptionsToggle] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
   const [input, setInput] = useState("");
-  const logStatus = useSelector((state) => state.statusLogin)
-  
+  const logStatus = useSelector((state) => state.statusLogin);
 
   let dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(isLogged())
-  }, [dispatch, logStatus])
+    // dispatch(isLogged())
+  }, [dispatch, logStatus]);
 
   function handleChange(e) {
     e.preventDefault();
@@ -78,31 +77,31 @@ export default function Navbar() {
               />
             </div>
             <div className="space-x-6 flex items-center">
-              {logStatus &&
-              <Link
-              to="/account"
-              className="text-gray-800  focus:outline-none hover:text-[#28B0A2] "
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="fill-stroke"
-                  width={24}
-                  height={24}
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
+              {logStatus && (
+                <Link
+                  to="/account"
+                  className="text-gray-800  focus:outline-none hover:text-[#28B0A2] "
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="fill-stroke"
+                    width={24}
+                    height={24}
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
                     />
-                </svg>
+                  </svg>
 
-                <span className="sr-only"> Account </span>
-              </Link>
-              }
+                  <span className="sr-only"> Account </span>
+                </Link>
+              )}
               <Link
                 to="/favoritos"
                 aria-label="view favourites"
