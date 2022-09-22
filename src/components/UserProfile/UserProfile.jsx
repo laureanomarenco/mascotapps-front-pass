@@ -18,16 +18,17 @@ export default function UserProfile() {
 
   useEffect(() => {
     dispatch(getUserInfo());
-    dispatch(isLogged());
+    // dispatch(isLogged());
   }, []);
 
   function logOut() {
-    axios.get("https://mascotapps-back-main.up.railway.app/auth/logout", { withCredentials: true })
+    axios.get("https://mascotapps-back-main.up.railway.app/auth/logout", {
+      withCredentials: true,
+    });
   }
 
-
-    return (
-      <div className="flex flex-col items-center w-full h-full min-w-screen">
+  return (
+    <div className="flex flex-col items-center w-full h-full min-w-screen">
       <Navbar className="w-full" />
       <div className="grid md:grid-cols-3 gap-2 items-center justify-center content-center w-full px-4  max-h-fit ">
         <div className="md:col-span-3 h-36 text-center flex content-center items-center justify-center">
@@ -40,7 +41,7 @@ export default function UserProfile() {
             className="object-cover w-full h-full object-center"
             src={user?.thumbnail}
             alt=""
-            />
+          />
         </div>
         <div className=" h-full md:min-h-[200px] py-2 px-6">
           <p className="text-xl font-semibold text-teal-800">
@@ -63,7 +64,7 @@ export default function UserProfile() {
           <Link
             to="/postpets"
             className="px-6 py-3  bg-[#FFC700] rounded-md font-bold hover:bg-[#ffd803]/80 transition-all duration-300"
-            >
+          >
             Postear un aviso
           </Link>
         </div>
@@ -72,5 +73,4 @@ export default function UserProfile() {
       <Footer />
     </div>
   );
- 
 }
