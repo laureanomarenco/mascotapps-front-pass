@@ -3,7 +3,10 @@ import React from "react";
 
 export default function Login() {
   const googleLogin = () => {
-    window.open("https://dev-roby-desarollo.up.railway.app/", "_self");
+    window.open(
+      "https://dev-roby-desarollo.up.railway.app/auth/google",
+      "_self"
+    );
   };
 
   return (
