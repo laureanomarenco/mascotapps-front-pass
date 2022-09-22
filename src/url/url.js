@@ -11,8 +11,11 @@ export const DONATION = URL + "checkout/balance";
 export const PET_SPECIES = URL + "pets/especies";
 // export const URL_POST_PET=URL_ROUTES + "users/postnewpet"
 export const POST =
+
+
   "https://dev-roby-desarollo.up.railway.app/users/postnewpet";
 
+
 export const LOGIN = URL + "auth/google";
-export const LOGIN_LOGGED = URL + "auth/logged_in";
+export const LOGIN_LOGGED = URL + "auth/login";
 export const USER_LOGGED = URL + "profile";
