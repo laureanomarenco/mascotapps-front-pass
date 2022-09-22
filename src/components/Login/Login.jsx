@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
 import React from "react";
 
-
 export default function Login() {
   const googleLogin = () => {
-    window.open("https://mascotapps-back-main.up.railway.app/", "_self")
-  }
+    window.open("https://mascotapps-back-main.up.railway.app/", "_self");
+  };
 
   return (
     <>
@@ -63,7 +62,7 @@ export default function Login() {
               </div>
             </div>
             <div>
-              <button onClick={googleLogin}>
+              <button type="button" onClick={googleLogin}>
                 Sign in con Google
               </button>
             </div>
